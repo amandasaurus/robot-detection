@@ -57,7 +57,13 @@ def is_robot(user_agent):
     if len(user_agent) == 0:
         raise ValueError
 
-    return any(robot_ua in user_agent for robot_ua in robot_useragents)
+    try:
+        # See if any one matches
+        return any(robot_ua.lower() in user_agent.lower() for robot_ua in robot_useragents)
+    except UnicodeDecodeError:
+        # Unicode error, robot_useragents is unicode strings. user_agent might have malformed bytes, so try looking at boring ascii
+        return any(robot_ua.lower().encode('ascii', 'ignore') in user_agent.lower() for robot_ua in robot_useragents)
+
 
 
 def _parse_db_export(filename):
