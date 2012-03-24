@@ -89,7 +89,10 @@ def _parse_db_export(filename):
                     exclude_ua.add(ua)
 
     if robot_useragents != exclude_ua:
+        print("robot_detection is out of date. Here's the new robot_useragents variable:")
         print(exclude_ua)
+    else:
+        print("No changes, robot_detection is up to date")
 
 
 if __name__ == '__main__' and len(sys.argv) == 2:
