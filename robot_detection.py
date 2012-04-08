@@ -36,7 +36,7 @@ robot_useragents= set([u'ATN_Worldwide',
      u'inspectorwww', u'irobot', u'jcrawler', u'jobo',
      u'ko_yappo_robot', u'label-grabber', u'larbin', u'legs',
      u'linkwalker', u'logo_gif_crawler', u'marvin', u'mattie',
-     u'mediafox', u'moget', u'msnbot', u'bingbot', u'muncher',
+     u'mediafox', u'moget', u'msnbot', u'muncher',
      u'muninn', u'newscan-online', u'nil', u'packrat',
      u'pageboy', u'patric', u'pegasus', u'perlcrawler',
      u'phpdig', u'piltdownman', u'pjspider', u'psbot',
@@ -48,7 +48,12 @@ robot_useragents= set([u'ATN_Worldwide',
      u'urlck', u'verticrawl', u'void-bot', u'wapspider',
      u'webcatcher', u'webquest', u'webreaper', u'webs',
      u'webspider', u'wget', u'whowhere', u'winona',
-     u'wlm'])
+     u'wlm',
+
+    # have to add
+    u'bingbot', u'baiduspider', u'YandexBot', u'YoudaoBot', u'AdsBot-Google',
+     
+    ])
 
 
 def is_robot(user_agent):
