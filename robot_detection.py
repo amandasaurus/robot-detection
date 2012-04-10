@@ -53,6 +53,7 @@ robot_useragents= set([u'ATN_Worldwide',
     # have to add
     u'bingbot', u'baiduspider', u'YandexBot', u'YoudaoBot', u'AdsBot-Google',
     u'MJ12bot', u'SeznamBot', u'YodaoBot', u'SurveyBot', u'discobot',
+    u'IErachnid', u'Sogou web spider', u'findlinks',
      
     ])
 
