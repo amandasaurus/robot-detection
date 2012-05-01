@@ -651,7 +651,7 @@ robot_useragents = [
         'sucker',
         'bot[\s_+:,\.\;\/\\\-]',
         '[\s_+:,\.\;\/\\\-]bot',
-        'no_user_agent'
+        'no_user_agent',
 
         # manually added
         'yeti',
