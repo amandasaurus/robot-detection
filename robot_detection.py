@@ -652,6 +652,9 @@ robot_useragents = [
 'bot[\s_+:,\.\;\/\\\-]',
 '[\s_+:,\.\;\/\\\-]bot',
 'no_user_agent'
+
+# manually added
+'yeti',
 ]
 
 robot_useragents = [re.compile(x) for x in robot_useragents]
