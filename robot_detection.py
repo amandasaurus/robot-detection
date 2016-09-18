@@ -1,6 +1,7 @@
 from __future__ import print_function
 
 import sys, os.path, codecs, re
+import six
 
 robot_useragents = [
         'appie',
@@ -660,7 +661,7 @@ robot_useragents = [
 robot_useragents = [re.compile(x) for x in robot_useragents]
 
 def is_robot(user_agent):
-    if not isinstance(user_agent, basestring):
+    if not isinstance(user_agent, six.string_types):
         raise TypeError
     if len(user_agent) == 0:
         raise ValueError
