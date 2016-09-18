@@ -13,7 +13,7 @@ There is only one, function, ``is_robot`` that takes a string (unicode or not) a
 
 ## Updating
 
-You can download a new version of the Robot Database from (this link)[http://www.robotstxt.org/dbexport.html].
+You can download a new version of the Robot Database from [this link](http://www.robotstxt.org/dbexport.html).
 
 Download the database dump, and run the file ``robot_detection.py`` with the file as first argument.
 
