@@ -11,6 +11,7 @@ setup(name="robot-detection",
       description="Library for detecting if a HTTP User Agent header is likely to be a bot",
       url="http://www.celtic-knot-creator.com/robot-detection/",
       license="GPLv3+",
+      test_suite='tests',
       classifiers=[
             'Development Status :: 4 - Beta',
             'Environment :: Web Environment',
