@@ -3,13 +3,13 @@
 from setuptools import setup, find_packages
 
 setup(name="robot-detection",
-      version="0.3",
+      version="0.4",
       author="Rory McCann",
       author_email="rory@technomancy.org",
       py_modules=['robot_detection'],
       summary="Library for detecting if a HTTP User Agent header is likely to be a bot",
       description="Library for detecting if a HTTP User Agent header is likely to be a bot",
-      url="http://www.celtic-knot-creator.com/robot-detection/",
+      url="https://github.com/rory/robot-detection",
       license="GPLv3+",
       test_suite='tests',
       install_requires = [
