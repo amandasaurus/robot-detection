@@ -4,12 +4,20 @@ robot_detection is a python module to detect if a given HTTP User Agent is a web
 
 ## Usage
 
-There is only one, function, ``is_robot`` that takes a string (unicode or not) and returns True iff that string matches a known robot in the robotstxt.org robot database
+There is only one function, ``is_robot``, that takes a string (unicode or not) and returns True if that string matches a known robot in the robotstxt.org robot database.
+The ``is_robot`` function will raise the following exceptions:
+* ``TypeError`` if ``is_robot`` receives a data type other than a string
+* ``ValueError`` if the user agent string is empty
+
 
 ### Example
 
     >>> import robot_detection
-    >>> robot_detection.is_robot(user_agent_string)
+    >>> try:
+    ...     robot_detection.is_robot(user_agent_string)
+    ... except:
+    ...     print("Exception when checking user_agent_string");
+    ...
 
 ## Updating
 
